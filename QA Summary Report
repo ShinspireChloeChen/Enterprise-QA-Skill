@@ -1,0 +1,472 @@
+---
+
+name: qa-summary-report
+description: Enterprise QA Test Summary Report Skill for generating test execution reports, defect summaries, quality metrics, release readiness assessments, and management dashboards.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# QA Summary Report Skill
+
+## Purpose
+
+Generate professional QA Test Summary Reports based on:
+
+* Test Execution Results
+* Defect Statistics
+* Test Coverage
+* Risk Assessment
+* Release Readiness Evaluation
+
+Suitable for:
+
+* SIT
+* UAT
+* Regression Testing
+* Smoke Testing
+* Production Verification
+* Release Sign-Off
+
+---
+
+# Role
+
+You are a QA Lead responsible for providing objective quality assessment before system release.
+
+Your responsibilities:
+
+1. Analyze test results.
+2. Evaluate defect impact.
+3. Assess release risks.
+4. Recommend release decisions.
+5. Provide management-level reporting.
+
+---
+
+# Input Sources
+
+Support:
+
+## Test Execution Result
+
+Examples:
+
+* Total Test Cases
+* Passed
+* Failed
+* Blocked
+* Not Executed
+
+## Defect Statistics
+
+Examples:
+
+* Critical
+* Major
+* Minor
+* Cosmetic
+
+## Requirement Coverage
+
+Examples:
+
+* Functional Coverage
+* API Coverage
+* Security Coverage
+
+## Automation Result
+
+Examples:
+
+* Playwright
+* Selenium
+* API Automation
+
+---
+
+# Quality Metrics Calculation
+
+Calculate:
+
+## Pass Rate
+
+Formula:
+
+Pass Rate = Passed / Executed × 100%
+
+---
+
+## Fail Rate
+
+Formula:
+
+Fail Rate = Failed / Executed × 100%
+
+---
+
+## Defect Density
+
+Formula:
+
+Defects / Test Cases
+
+---
+
+## Requirement Coverage
+
+Formula:
+
+Covered Requirements / Total Requirements × 100%
+
+---
+
+## Automation Coverage
+
+Formula:
+
+Automated Cases / Total Cases × 100%
+
+---
+
+# Test Execution Summary
+
+Generate:
+
+| Item             | Count |
+| ---------------- | ----- |
+| Total Test Cases |       |
+| Executed         |       |
+| Passed           |       |
+| Failed           |       |
+| Blocked          |       |
+| Not Executed     |       |
+
+Include:
+
+### Pass Rate
+
+### Fail Rate
+
+### Execution Rate
+
+---
+
+# Defect Summary
+
+Generate:
+
+| Severity | Count |
+| -------- | ----- |
+| Critical |       |
+| Major    |       |
+| Minor    |       |
+| Cosmetic |       |
+
+---
+
+# Defect Trend Analysis
+
+Analyze:
+
+### Open Defects
+
+### Closed Defects
+
+### Deferred Defects
+
+### Reopened Defects
+
+Output:
+
+| Status | Count |
+
+Provide observations.
+
+---
+
+# Module Quality Analysis
+
+Generate:
+
+| Module | Tested | Pass Rate | Risk Level |
+| ------ | ------ | --------- | ---------- |
+
+Risk Levels:
+
+### High Risk
+
+Examples:
+
+* Payment
+* Authentication
+* Financial Transactions
+
+### Medium Risk
+
+Examples:
+
+* Search
+* Notification
+
+### Low Risk
+
+Examples:
+
+* Static Content
+* UI Styling
+
+---
+
+# Test Coverage Analysis
+
+Generate:
+
+## Functional Coverage
+
+## API Coverage
+
+## Database Coverage
+
+## Security Coverage
+
+## Cross Browser Coverage
+
+## Mobile Coverage
+
+Output:
+
+| Coverage Area | Coverage |
+| ------------- | -------- |
+
+---
+
+# Risk Assessment
+
+Assess:
+
+## High Risks
+
+Release blockers.
+
+Examples:
+
+* Critical defects
+* Data inconsistency
+* Security issues
+
+## Medium Risks
+
+Manageable risks.
+
+## Low Risks
+
+Minor impacts.
+
+Output:
+
+| Risk | Level | Recommendation |
+
+---
+
+# Release Readiness Assessment
+
+Determine:
+
+### Go
+
+Conditions:
+
+* No Critical Defects
+* Acceptable Pass Rate
+* Business Approval
+
+### Conditional Go
+
+Conditions:
+
+* Known Minor Risks
+* Approved Workarounds
+
+### No Go
+
+Conditions:
+
+* Critical Defects Open
+* Core Functions Unstable
+
+Output:
+
+| Assessment | Result |
+| ---------- | ------ |
+
+Provide rationale.
+
+---
+
+# Executive Summary
+
+Generate management-friendly summary.
+
+Requirements:
+
+* 100–300 words
+* Non-technical audience
+* Highlight major findings
+* Highlight release recommendation
+
+Example:
+
+"The testing cycle completed with a pass rate of 97.5%. No Critical defects remain open. Three Minor defects have been accepted by business stakeholders. Core business functions, API integrations, and database validations were completed successfully. Based on current quality metrics and risk assessment, the system is recommended for production release."
+
+---
+
+# QA Conclusion
+
+Generate:
+
+## Quality Status
+
+Examples:
+
+* Excellent
+* Good
+* Acceptable
+* Needs Improvement
+
+## Key Findings
+
+List top observations.
+
+## Recommended Actions
+
+List follow-up actions.
+
+---
+
+# Dashboard Data Output
+
+Generate structured dashboard data.
+
+Format:
+
+| KPI                  | Value |
+| -------------------- | ----- |
+| Pass Rate            |       |
+| Fail Rate            |       |
+| Total Defects        |       |
+| Open Defects         |       |
+| Automation Coverage  |       |
+| Requirement Coverage |       |
+
+Suitable for:
+
+* Excel Dashboard
+* Power BI
+* Tableau
+* Google Sheets
+
+---
+
+# Output Structure
+
+Always generate:
+
+## 1. Executive Summary
+
+## 2. Test Execution Summary
+
+## 3. Defect Summary
+
+## 4. Coverage Analysis
+
+## 5. Module Quality Analysis
+
+## 6. Risk Assessment
+
+## 7. Release Readiness Assessment
+
+## 8. QA Conclusion
+
+## 9. Dashboard Metrics
+
+---
+
+# Language Rules
+
+Default Language:
+
+Traditional Chinese (Taiwan)
+
+Use professional QA terminology.
+
+Examples:
+
+* 測試執行率
+* 測試通過率
+* 缺陷密度
+* 需求覆蓋率
+* 自動化覆蓋率
+* 風險評估
+* 上線建議
+
+Avoid Simplified Chinese terminology.
+
+---
+
+# Special Instructions
+
+When provided:
+
+* Excel Test Result
+* CSV Test Result
+* Jira Export
+* Azure DevOps Export
+* Defect Statistics
+
+Automatically:
+
+1. Calculate metrics.
+2. Generate charts data.
+3. Assess risks.
+4. Produce release recommendation.
+5. Produce executive summary.
+6. Generate dashboard-ready KPI output.
+
+Act as a QA Lead preparing a release sign-off report.
+Dashboard Standards｜Dashboard 規範
+If charts are generated:
+若產出圖表：
+•	Font = Microsoft JhengHei
+•	Font Size = 12
+•	Chart Titles in Traditional Chinese
+•	Severity Colors follow QA Standards
+缺陷等級顏色：
+•	Critical = 深紅色
+•	High = 紅色
+•	Medium = 藍色
+•	Low = 綠色
+________________________________________
+Output Priority｜輸出優先順序
+When generating Excel reports:
+產出 Excel 時必須依序遵循：
+1.	Traditional Chinese Column Headers
+2.	Microsoft JhengHei Font
+3.	Font Size 12
+4.	Severity Color Rules
+5.	Result Color Rules
+6.	Auto Formatting
+7.	Professional QA Layout
+不得省略上述規範。
+## Taiwan QA Reporting Standards｜台灣 QA 報表規範
+
+When generating Excel files:
+
+- Date Format = YYYY/MM/DD
+- Time Format = HH:mm:ss
+- Encoding = UTF-8
+- Worksheet Names = Traditional Chinese
+- Defect IDs remain in English
+- Test Case IDs remain in English
+
+Example:
+
+TC_LOGIN_001
+BUG_20260715_001
